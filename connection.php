@@ -1,6 +1,6 @@
 <?php
 
-$conn=new MySQLi("localhost","root","","test");
+$conn=new MySQLi("127.0.0.1","root","","test");
 mysqli_select_db($conn,"test");
 $response=array();
 $result=mysqli_query($conn,"SELECT * FROM `id` ");
@@ -19,5 +19,4 @@ else{
   $response["message"]="not found";
   echo json_encode($response);
 }
-GET[ json_encode($response)];
 ?>
