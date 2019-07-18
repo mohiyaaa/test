@@ -13,10 +13,11 @@ if(MySQLi_num_rows($result)>0){
   }
   $response["t"]=1;
   echo json_encode($response);
-}else{
+}
+else{
   $response["t"]=0;
   $response["message"]="not found";
   echo json_encode($response);
 }
-
+return json_encode($response);
 ?>
