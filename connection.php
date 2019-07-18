@@ -19,5 +19,5 @@ else{
   $response["message"]="not found";
   echo json_encode($response);
 }
-return json_encode($response);
+GET[ json_encode($response)];
 ?>
