@@ -23,7 +23,6 @@ else{
   $response["message"]="not found";
   echo json_encode($response);
 }
-return $response;
 $result->close();
 $conn->close();
 
