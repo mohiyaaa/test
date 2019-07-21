@@ -3,7 +3,7 @@
 $conn=new MySQLi("localhost","root","","testt");
 mysqli_select_db($conn,"testt");
 $response=array();
-if($result = mysqli_query($conn,"SELECT * FROM `id` ")){
+if($result = mysqli_query($conn,"SELECT * FROM `id` where name='mahsa'")){
 	$row_cnt = $result->num_rows;
 	printf("Result set has %d rows.\n", $row_cnt);
 
