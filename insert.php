@@ -1,6 +1,6 @@
 <?php
    
-   $json =''.$_GET["name"];
+   $json =''.$_POST["name"];
     $name1 = json_decode($json);
 	$name= $name1->{'name'};
 	echo $name;
