@@ -1,9 +1,8 @@
 <?php
    
-   $json =''.$_POST["name"];
+   $json =$_POST['name'];
     $name1 = json_decode($json);
 	$name= $name1->{'name'};
-	echo $name;
     $conn=new MySQLi("localhost","root","","testt");
     mysqli_select_db($conn,"testt");
 	$query="INSERT INTO `id`(`name`) VALUES ('".$name."');";
